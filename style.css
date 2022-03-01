@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-bottom:5vmax;
+}
+.header-wrapper{
+    margin-top:2vmax;
+    margin-bottom:5vmax;
+}
+body{
+    background-color: rgb(255, 232, 202);
+}
+.pizza-party-container{
+    text-align: center;
+}
+.pizza-header-img{
+    width:50%;
+}
+.pizza-header-container{
+    display:grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+}
+.pizza-header-container p{
+    font-size: 5vmax;
+    color: rgb(73, 68, 60);
+    margin-left: 20vmax;
+}
+.pizza-party-img{
+    width: 80%;
+    display: block;
+    box-shadow: 5px 5px 5px 5px;
+    transition: 0.5s;
+}
+.pizza-party-container{
+    position: relative;
+    width: 60%;
+    margin-left:5vmax;
+    margin-right:5vmax;
+}
+.pizza-party-img-overlay{
+    position: absolute;
+    bottom:0;
+    left:-5vmax;
+    text-shadow: 2% 2% 2% 2%;
+    font-size: 5vmax;
+    font-family: quicksand;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.pizza-party-img:hover{
+    filter: brightness(80%);
+    transition: 0.5s;
+}
+.pizza-party-img:hover ~ .pizza-party-img-overlay{
+    left:2vmax;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.pizza-party-wrapper{
+    display: flex;
+}
+.pizza-party-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pizza-party-description h1{
+    font-size: 5vmax;
+    margin-left:-10vmax;
+}
+.pizza-party-description p{
+    margin-top:2vmax;
+    margin-left:-10vmax;
+    font-size:2vmax;
+}
+.host-img{
+    width:50%;
+    height: 500px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.host-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    margin-left:5vmax;
+}
+h1{
+    text-align: center;
+}
+.host-container{
+    position: relative;
+}
+.host-container h4{
+    font-size:3vmax;
+    font-family: quicksand;
+}
+.host-container p{
+    font-size:1vmax;
+    margin-top:-5vmax;
+    font-family: quicksand;
+}
+.host-description{
+    position: absolute;
+    top:4vmax;
+    left:-5vmax;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    transition-delay: 0.3s;
+    color: white;
+}
+.host-name{
+    transition-delay: 2s;
+}
+.host-img:hover ~ .host-description{
+    opacity: 1;
+    left:2vmax;
+    pointer-events: none;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+.host-img:hover{
+    filter: brightness(60%);
+    transition: 0.5s;
+}
